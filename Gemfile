@@ -9,7 +9,7 @@ gem 'jquery-ui-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'sdoc', group: :doc
-
+gem 'bcrypt'
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
