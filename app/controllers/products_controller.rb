@@ -79,6 +79,17 @@ class ProductsController < ApplicationController
     def set_product
       @product = Product.find(params[:id])
     end
+    
+    def who_bought
+    @product = Product.find(params[:id])
+    @latest_order = @product.orders.order(:updated_at).last
+    if stale?(@latest_order)
+      respond_to do |format|
+        format.atom
+      end
+    end
+    end
+
 
     # Never trust parameters from the scary internet, only allow the white
     # list through.
