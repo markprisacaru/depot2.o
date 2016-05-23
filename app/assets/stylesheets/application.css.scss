@@ -13,17 +13,20 @@
  *= require_self
  *= require_tree .
  */
-
+ .logo_main {height: 50px;width: 100px;}
+.locale {float: right; margin: -0.25em 0.1em;font: 15px "Times New Roman", serif; color:black;}
 #banner {
-  background: #9c9;
+  background: #f7882f;
   padding: 10px;
   border-bottom: 2px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
-  color: #282;
+  color: #D6DCF0;
   text-align: center;
 
   img {
     float: left;
+    height: 40px;
+    width:  100px;
   }
 }
 
@@ -32,12 +35,12 @@
   border: 2px solid red;
   padding: 1em;
   margin-bottom: 2em;
-  background-color: #f0f0f0;
+  background-color: #e65c00;
   font: bold smaller sans-serif;
 }
 
 #columns {
-  background: #141;
+  background: #808080;
 
   #main {
     margin-left: 17em;
@@ -47,10 +50,12 @@
 
 //#START:side
   #side {
+    color:black;
+    font: bold;
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #141;
+    background: #808080;
 
 /* START_HIGHLIGHT */
     form, div {
@@ -80,7 +85,8 @@
         list-style: none;
 
         a {
-          color: #bfb;
+          color: #D6DCF0;
+          
           font-size: small;
         }
       }

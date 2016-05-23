@@ -13,7 +13,7 @@ gem 'bcrypt'
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
-  gem 'web-console', '2.0.0.beta3'
+  gem 'web-console'
   gem 'spring'
 end
 

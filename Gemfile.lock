@@ -167,7 +167,7 @@ DEPENDENCIES
   sqlite3
   turbolinks
   uglifier
-  web-console (= 2.0.0.beta3)
+  web-console
 
 BUNDLED WITH
    1.11.2
