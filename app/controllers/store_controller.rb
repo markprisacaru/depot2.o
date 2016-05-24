@@ -7,14 +7,14 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 class StoreController < ApplicationController
-  include CurrentCart
   skip_before_action :authorize
-  
+  include CurrentCart
+  before_action :set_cart
   def index
     if params[:set_locale]
       redirect_to store_url(locale: params[:set_locale])
     else
-    @products = Product.order(:title)
+      @products = Product.order(:title)
     end
   end
 end
