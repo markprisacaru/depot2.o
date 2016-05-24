@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* START_HIGHLIGHT */
+.main {background: #f7882f;}
 .products {
   table {
     border-collapse: collapse;
@@ -43,11 +44,12 @@
   }
 
   .list_line_even {
-    background:   #e0f8f8;
+    background:   #f7882f;
   }
 
   .list_line_odd {
-    background:   #f8b0f8;
+    background:   #808080;
   }
 }
 /* END_HIGHLIGHT */
+a {color: #D6DCF0;}

@@ -2,6 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
   <title>Pragprog Books Online Store</title>
   <%= stylesheet_link_tag    "application", media: "all",
     "data-turbolinks-track" => true %>
@@ -38,19 +44,31 @@
 <!-- END_HIGHLIGHT -->
       
       <ul class="nav nav-pills nav-stacked">
-        <li><a href="/store/index"><%=	t('.home') %></a></li>
-        <li><a href="/store/help"><%=	t('.questions') %></a></li>
-        <li><a href="/store/news"><%=	t('.news') %></a></li>
-        <li><a href="/store/about"><%=	t('.contact') %></a></li>
+        <li><button type="button" class="btn btn-warning"><a href="/store/index"><%=	t('.home') %></a></button></li>
+        <li><button type="button" class="btn btn-warning"><a href="/store/help"><%=	t('.questions') %></a></button></li>
+        <li><button type="button" class="btn btn-warning"><a href="/store/news"><%=	t('.news') %></a></button></li>
+        <li><button type="button" class="btn btn-warning"><a href="/store/about"><%=	t('.contact') %></a></button></li>
+        <li><button type="button" class="btn btn-success"><a href="/users/login"><%=	"Login" %></a></button></li>
       </ul>
       
       <% if session[:user_id] %>
-        <ul class="nav nav-pills nav-stacked">
-          <li><%= link_to 'Orders',   orders_path   %></li>
-          <li><%= link_to 'Products', products_path %></li>
-          <li><%= link_to 'Users',    users_path    %></li>
-        </ul>
-        <%= button_to 'Logout', logout_path, method: :delete   %>
+<!-- DROP DOWN BEGIN -->
+
+  <ul class="nav nav-pills nav-stacked">
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin Account <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><button type="button" class="btn btn-warning"><%= link_to 'Orders',   orders_path   %></button></li>
+          <li><button type="button" class="btn btn-warning"><%= link_to 'Products', products_path %></button></li>
+          <li><button type="button" class="btn btn-warning"><%= link_to 'Users',    users_path    %></button></li>
+           <li><button type="button" class="btn btn-warning"><%= link_to 'Carts',    carts_path    %></button></li>
+           <li><button type="button" class="btn btn-warning"><%= link_to 'Logout', logout_path, method: :delete   %></button></li>
+      </ul>
+    </li>
+  </ul>
+
+
+<!-- Drop Down end-->
       <% end %>
       
     </div>

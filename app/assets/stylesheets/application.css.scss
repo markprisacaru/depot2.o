@@ -13,6 +13,7 @@
  *= require_self
  *= require_tree .
  */
+ .main {background: #f7882f;}
  .logo_main {height: 50px;width: 100px;}
 .locale {float: right; margin: -0.25em 0.1em;font: 15px "Times New Roman", serif; color:black;}
 #banner {
@@ -85,7 +86,7 @@
         list-style: none;
 
         a {
-          color: #D6DCF0;
+          color:black;
           
           font-size: small;
         }
@@ -98,13 +99,15 @@
 //#START:form
 .depot_form {
   fieldset {
-    background: #efe;
+    background: #f7882f;
+    text-align: left;
+      padding-left: 1em;
 
     legend {
-      color: #dfd;
-      background: #141;
+      color: black;
+      background: #808080;
       font-family: sans-serif;
-      padding: 0.2em 1em;
+      
     }
   }
 
@@ -112,18 +115,18 @@
     label {
       width: 5em;
       float: left;
-      text-align: right;
-      padding-top: 0.2em;
-      margin-right: 0.1em;
+      text-align: left;
+      padding-top: 1em;
+      margin-right: 1em;
       display: block;
     }
 
     select, textarea, input {
-      margin-left: 0.5em;
+      margin-left: 1em;
     }
 
     .submit {
-      margin-left: 4em;
+      margin-left: 1em;
     }
 
     br {

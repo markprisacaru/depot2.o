@@ -7,38 +7,44 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 # encoding: utf-8
-Product.create!(title: 'CoffeeScript',
+Product.create!(title: 'MSI GeForce GTX 980 GAMING 4G',
   description: 
     %{<p>
-        CoffeeScript is JavaScript done right. It provides all of JavaScript's
-	functionality wrapped in a cleaner, more succinct syntax. In the first
-	book on this exciting new language, CoffeeScript guru Trevor Burnham
-	shows you how to hold onto all the power and flexibility of JavaScript
-	while writing clearer, cleaner, and safer code.
-      </p>},
-  image_url:   'cs.jpg',    
-  price: 36.00)
+        Core Clock: 1102 MHz
+        Max Resolution: Analog: 2048 x 1536 Digital: 4096 x 2160
+        DisplayPort: 3 x DisplayPort 1.2
+        DVI: 1 x Dual-link DVI-I
+        Model #: 06G-P4-4995-KR
+        Item #: N82E16814487142
+        Return Policy: Replacement Only Return Policy</p>},
+  image_url:   '980.jpg',    
+  price: 460.00)
 # . . .
-Product.create!(title: 'Programming Ruby 1.9 & 2.0',
+Product.create!(title: 'MSI GeForce GTX 980-TI GAMING 4G',
   description:
     %{<p>
-        Ruby is the fastest growing and most exciting dynamic language
-        out there. If you need to get working programs delivered fast,
-        you should add Ruby to your toolbox.
+        Core Clock: 1000 MHz
+        DisplayPort: 3 x DisplayPort
+        DVI: 1 x DL DVI-I
+        HDMI: 1 x HDMI
+        Model #: GTX 980Ti GAMING 6G LE
+        Item #: N82E16814127895
+        Return Policy: Replacement Only Return Policy
       </p>},
-  image_url: 'ruby.jpg',
-  price: 49.00)
+  image_url: '980ti.jpg',
+  price: 560.00)
 # . . .
 
-Product.create!(title: 'Rails Test Prescriptions',
+Product.create!(title: 'ASUS GeForce GTX TITAN X GTXTITANX-12GD5 12GB',
   description: 
     %{<p>
-        <em>Rails Test Prescriptions</em> is a comprehensive guide to testing
-        Rails applications, covering Test-Driven Development from both a
-        theoretical perspective (why to test) and from a practical perspective
-        (how to test effectively). It covers the core Rails testing tools and
-        procedures for Rails 2 and Rails 3, and introduces popular add-ons,
-        including Cucumber, Shoulda, Machinist, Mocha, and Rcov.
+        Core Clock: 1000 MHz
+      DisplayPort: 3 x DisplayPort
+      DVI: 1 x DVI-I
+      HDMI: 1 x HDMI
+      Model #: GTXTITANX-12GD5
+      Item #: N82E16814121923
+      Return Policy: Replacement Only Return Policy
       </p>},
-  image_url: 'rtp.jpg',
-  price: 34.00)
+  image_url: 'titan.jpg',
+  price: 1326.00)

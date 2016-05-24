@@ -3,21 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /* START_HIGHLIGHT */
+.main {background: #f7882f;}
 .store {
   h1 {
     margin: 0;
     padding-bottom: 0.5em;
     font:  150% sans-serif;
-    color: #226;
-    border-bottom: 3px dotted #77d;
+    color: #D6DCF0;
+    border-bottom: 3px dotted #808080;
   }
 
   /* An entry in the store catalog */
   .entry {
     overflow: auto;
     margin-top: 1em;
+    margin-left: 1em;
     border-bottom: 1px dotted #77d;
     min-height: 100px;
+    color:black;
 
     img {
       width: 80px;
@@ -32,7 +35,7 @@
       margin-left: 100px;
       margin-top: 0;
       margin-bottom: 2px;
-      color: #227;
+      color:black;
     }
 
 //#START:inline
@@ -50,7 +53,7 @@
 //#END:inline
 
     .price {
-      color: #44a;
+      color:black;
       font-weight: bold;
       margin-right: 3em;
     }
