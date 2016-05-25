@@ -48,3 +48,23 @@ Product.create!(title: 'ASUS GeForce GTX TITAN X GTXTITANX-12GD5 12GB',
       </p>},
   image_url: 'titan.jpg',
   price: 1326.00)
+  
+Product.create!(title: 'Intel Core i5-4690K Devils Canyon Quad-Core 3.5 GHz LGA 1150',
+  description: 
+    %{<p>
+       Haswell
+      Unlocked Multiplier
+      Turbo Boost
+      </p>},
+  image_url: 'i5.jpg',
+  price: 249.00)
+  
+    Product.create!(title: 'Intel Core i7-6690K Devils Canyon Quad-Core 3.5 GHz LGA 1150',
+  description: 
+    %{<p>
+       Haswell
+      Unlocked Multiplier
+      Turbo Boost
+      </p>},
+  image_url: 'i7.jpg',
+  price: 326.00)
